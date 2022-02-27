@@ -1,0 +1,4 @@
+seed: -1
+device: "cuda"
+
+model_config: "configs/models/CRNN.yaml"

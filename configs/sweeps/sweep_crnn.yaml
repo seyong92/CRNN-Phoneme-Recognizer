@@ -1,0 +1,24 @@
+program: sweep.py
+method: bayes
+metric:
+  name: valid/f1_micro_3
+  goal: maximize
+parameters:
+  model_config:
+    value: "configs/models/CRNN.yaml"
+  n_mels:
+    min: 40
+    max: 229
+  model_complexity:
+    values: [48, 64, 80]
+  num_frames:
+    min: 28
+    max: 243
+  learning_rate:
+    min: 0.00001
+    max: 0.0001
+  lr_decay_step:
+    min: 100
+    max: 10000
+  num_lbl:
+    value: 39
