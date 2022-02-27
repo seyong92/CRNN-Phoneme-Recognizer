@@ -18,7 +18,7 @@ if __name__ == '__main__':
     x, sr = sf.read(args.audio_path)
     if x.ndim > 1:
         x = x[:, 0]
-    x = librosa.resample(x, sr, config.sample_rate)
+    x = librosa.resample(x, orig_sr=sr, target_sr=config.sample_rate)
     x_tensor = torch.from_numpy(x).float().to(config.device)
 
     with torch.no_grad():
