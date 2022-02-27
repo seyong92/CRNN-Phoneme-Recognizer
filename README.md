@@ -14,7 +14,7 @@ $ poetry install
 If you don't use poetry, please just install packages in ```pyproject.toml``` manually.
 
 ## Extract phoneme posteriorgram (PPG) with pretrained model.
-You can download pretrained model from Releases, and you can save PPG through the following command.
+You can download pretrained model from [Releases](https://github.com/seyong92/CRNN-Phoneme-Recognizer/releases/tag/v0.1.0), and you can save PPG through the following command.
 ```
 $ python infer.py [MODEL_PATH] [AUDIO_PATH] [SAVE_PATH]
 ```
